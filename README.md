@@ -13,10 +13,6 @@ A simple pretty hasura utils
   yarn add devercode-hasura
 ```
 
-## Demo
-
-![alt demo](https://user-images.githubusercontent.com/85423098/122147465-27480100-ce83-11eb-8383-19efeda5e5f4.png)
-
 ## Features
 
 - simply the way to create client for connecting to hasura endpoint
