@@ -32,7 +32,7 @@ const initApollo = ({ uri, headers }) => {
   });
 };
 
-export const createcClient = ({
+export const createClient = ({
   endpoint,
   secret,
 }: {
