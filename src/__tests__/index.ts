@@ -1,6 +1,6 @@
-import { createcClient } from "../index";
+import { createClient } from "../index";
 import tag from "graphql-tag";
-const client = createcClient({
+const client = createClient({
   endpoint: "https://zilowproxydb.herokuapp.com/v1/graphql",
   secret: "Zilow1212@@",
 });

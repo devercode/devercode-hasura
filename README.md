@@ -20,7 +20,7 @@ A simple pretty hasura utils
 ## Usage
 
 ```javascript
-const client = createcClient({
+const client = createClient({
   endpoint: "https://examnple.herokuapp.com/v1/graphql",
   secret: "example@@",
 });
