@@ -1,6 +1,6 @@
-# Devercode-logger (Typescript)
+# Devercode-hasura (Typescript)
 
-A simple pretty logger
+A simple pretty hasura utils
 
 ## Authors
 
@@ -9,8 +9,8 @@ A simple pretty logger
 ## Installation
 
 ```bash
-  npm install devercode-logger
-  yarn add devercode-logger
+  npm install devercode-hasura
+  yarn add devercode-hasura
 ```
 
 ## Demo
@@ -19,42 +19,14 @@ A simple pretty logger
 
 ## Features
 
-- Colorize support
-- Label Support
-- Sentry Integration Support
+- simply the way to create client for connecting to hasura endpoint
 
 ## Usage
 
-- Simple log
-
 ```javascript
-import { createLogger, TransportType } from "../index";
-
-const logger = createLogger({
-  transports: [TransportType.CONSOLE],
-});
-logger.info("LABEL::Helloworld");
-logger.warn("Warning!!!");
-logger.error("throw an error");
-logger.silly("Silly log");
-```
-
-- Catch Error with sentry
-
-```javascript
-const logger = createLogger({
-  transports: [TransportType.CONSOLE, TransportType.SENTRY],
-  context: {
-    sentryOpts: {
-      level: "error",
-      sentry: {
-        dsn: "https://27a93ba8adce472db368f5ad8c7789f1@o850084.ingest.sentry.io/5816836",
-      },
-    },
-  },
-});
-logger.error("Throw an error", {
-  foo: "foo",
+const client = createcClient({
+  endpoint: "https://examnple.herokuapp.com/v1/graphql",
+  secret: "example@@",
 });
 ```
 
@@ -65,3 +37,7 @@ logger.error("Throw an error", {
 ## Support
 
 For support, email devercode@gmail.com
+
+```
+
+```
